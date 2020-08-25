@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cognitive Labs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="#">
+</head>
+
+<body>
+
+
+    <!--####### NAVIVGATION BAR######## -->
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="index.html">LOBBY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li class="topnav-right"><a href="#ultrascape">Sign up/Log in</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- ###########GAME AREA #############-->
+    <div class="container" id="game-back">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="JavaScriptLogo.png">
+                    </div>
+                    <label>NET-LEAPER</label>
+                    <p>A virus has infected the system! You are a system monitor that has been tasked with ridding the
+                        system of this corruption!</p>
+                    <div class="gamebutton">
+                        <div class="defButton">
+                            <a href="games/jumper/index.html"><button class="defaultButton">PLAY</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="JavaScriptLogo.png">
+                    </div>
+                    <label>BYTE LEAPER</label>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <div class="gamebutton">
+                        <div class="defButton">
+                            <a href="#"><button class="defaultButton">PLAY</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="JavaScriptLogo.png">
+                    </div>
+                    <label>BYTE LEAPER</label>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <div class="gamebutton">
+                        <div class="defButton">
+                            <a href="#"><button class="defaultButton">PLAY</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ##################################FOOTER AREA############################## -->
+    <footer id="sticky-footer">
+        <hr class="footerTop">
+        <div class="comName">
+            <h3>&#169; Cognitive Labs</h3>
+        </div>
+    </footer>
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+
+            else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

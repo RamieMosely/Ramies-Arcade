@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cognitive Labs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="rIcon.ico">
+</head>
+
+<body>
+
+
+    <!--####### NAVIVGATION BAR######## -->
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="index.html">LOBBY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li class="topnav-right"><a href="#">Sign Up/Log In</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- ###########CONTACT AREA #############-->
+    <div class="container">
+        <h1 class="section2Header" id="contactpage">CONTACT US</h1>
+        <div class="row">
+            <div class="col-12">
+                <div class="contactMe">
+                    <form action="" method="POST">
+                        <div class="name-field">
+                            <h2>Name:</h2><input name="name" type="text" size="55" placeholder="Your Name" required>
+                            <h2>Email:</h2> <input name="email" type="email" size="55" placeholder="Your Email"
+                                required>
+                        </div>
+                        <br>
+                        <div>
+                            <textarea name="message" cols="49" rows="10" required></textarea>
+                        </div>
+                        <br>
+                        <div class="submit-button">
+                            <input type="submit">
+                        </div>
+                    </form>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+
+
+
+
+        <!-- ##################################FOOTER AREA############################## -->
+        <footer id="sticky-footer">
+            <hr class="footerTop">
+            <div class="comName">
+                <h3>&#169; RaevinSoft()</h3>
+            </div>
+        </footer>
+
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                }
+
+                else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+</body>
+
+</html>
