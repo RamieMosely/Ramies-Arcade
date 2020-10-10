@@ -1,5 +1,4 @@
-# //Cognitive Labs//
-<h3>Cognition in Motion</h3>
+# //Ramies Arcade//
 
 User based brain training, tracking and general or specific cognitive improvement 
 
