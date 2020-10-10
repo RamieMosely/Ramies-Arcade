@@ -1,28 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RAMIES ARCADE</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="#">
-</head> 
-
 <body>
 
 
     <!--####### NAVIVGATION BAR######## -->
-    <nav>
-        <ul class="topnav" id="dropdownClick">
-            <li><a href="index.html">LOBBY</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-            <li class="topnav-right"><a href="#ultrascape">Sign up/Log in</a></li>
-            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
-        </ul>
-    </nav>
+
 
 
 
@@ -78,26 +58,6 @@
 
 
 
-    <!-- ##################################FOOTER AREA############################## -->
-    <footer id="sticky-footer">
-        <hr class="footerTop">
-        <div class="comName">
-            <h3>Ramies Arcade</h3>
-        </div>
-    </footer>
 
-    <script>
-        function dropdownMenu() {
-            var x = document.getElementById("dropdownClick");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            }
 
-            else {
-                x.className = "topnav";
-            }
-        }
-    </script>
 </body>
-
-</html>
