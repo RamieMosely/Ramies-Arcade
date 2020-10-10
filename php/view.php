@@ -20,6 +20,9 @@
 		case 'about':
 			require('pages/about.php');
 			break;
+		case 'game':
+			require('pages/game.php');
+			break;
 		default:
 			require('pages/404.php');
 	}

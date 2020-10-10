@@ -28,10 +28,10 @@ var game = new Phaser.Game(config);
 
 //LOAD GAME ASSETS
 function preload() {
-    this.load.image('background', 'background.png');
-    this.load.image('ground', 'ground.png');
-    this.load.image('point', "point.png");
-    this.load.spritesheet('player', 'playersheet.png', { frameWidth: 16, frameHeight: 16 });
+    this.load.image('background', '/images/jumperimages/background.png');
+    this.load.image('ground', '/images/jumperimages/ground.png');
+    this.load.image('point', "/images/jumperimages/point.png");
+    this.load.spritesheet('player', '/images/jumperimages/playersheet.png', { frameWidth: 16, frameHeight: 16 });
 }
 
 

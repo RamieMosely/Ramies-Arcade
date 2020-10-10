@@ -27,7 +27,7 @@
                         system of this corruption!</p>
                     <div class="gamebutton">
                         <div class="defButton">
-                            <a href="games/jumper/index.html"><button class="defaultButton">PLAY</button></a>
+                            <a href="index.php?page=game"><button class="defaultButton">PLAY</button></a>
                         </div>
                     </div>
                 </div>
