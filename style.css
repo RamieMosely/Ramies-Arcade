@@ -24,7 +24,7 @@ nav, header, footer {
 body {
     line-height: 1;
     margin: 0;
-    background-color: #1A2833;
+    background-color: black;
     font-family: 'arcade', sans-serif;
     font-size: 20px;
 }
@@ -152,31 +152,33 @@ ul.topnav li.dropdownIcon {
 /*################################### HOME PAGE################################################ */
 #game-back {
     background-image: url("images/homeintroback.gif");
-    background-position: top center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: yellow solid 2px;
+    padding-bottom: 150px;
 }
 
-#homebackground {
+.homeLogo {
     text-align: center;
+
 }
 
 @keyframes pulse {
     from { transform: scale(1);}
-    50% { transform: scale(1.2);}
+    50% { transform: scale(0.85);}
     to { transform: scale(1)}
 }
 
-#homebackground img {
+.homeLogo img {
     animation: pulse;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
-#homebackground img:hover,
-#homebackground img:focus {
-    animation-name: unset;
+.homeLogo img:hover,
+.homeLogo img:focus {
+
     cursor: pointer;
 }
 
@@ -197,10 +199,8 @@ ul.topnav li.dropdownIcon {
 
 .box {
     text-align: center;
-    margin: 24px;
-    margin-top: 5px;
-    margin-bottom: 105px;
-    padding: 36px 24px 40px 24px;
+    margin: 14px;
+    padding: 26px 14px 30px 14px;
     background-color: rgba(0, 0, 0, 0.653);
     border-radius: 7px;
     box-shadow: 0 0 0 1px yellow,
@@ -224,23 +224,28 @@ ul.topnav li.dropdownIcon {
 
 /* #########################################ABOUT PAGE################################# */
 #section1-background {
-    background-color: #004AAD;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("images/homeintroback.gif");
     background-position: center;
-    border-bottom: 1px solid #1BADD6;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-#
 
 
 .intro-box {
     text-align: center;
-    margin: 24px;
+    margin: 64px;
     padding: 16px 24px 0px 24px;
-    background-color: #1A2833;
-    box-shadow: 0 0 0 1px #004AAD;
+    background-color:rgba(0, 0, 0, 0.639);
+}
 
+.aboutTitle {
+    font-size: 40px;
+    color: white;
+}
+
+.aboutLogo img {
+    width: 300px;
+    height: 300px;
 }
 
 
@@ -251,7 +256,7 @@ h1.section2Header {
     text-align: center;
     font-family: 'arcade', sans-serif;
     line-height: 70px;
-    color: #1BADD6;
+    color: #ffffff;
     background-color: #1A2833;
 
 }
