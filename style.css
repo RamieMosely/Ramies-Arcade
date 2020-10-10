@@ -1,4 +1,14 @@
 /*############ Defaults ###########*/
+@font-face {
+    font-family: 'arcade'; 
+    src: url('ka1.ttf'); 
+}
+
+@font-face {
+    font-family: 'game';
+    src: url('game.ttf');
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -15,21 +25,21 @@ body {
     line-height: 1;
     margin: 0;
     background-color: #1A2833;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'arcade', sans-serif;
     font-size: 20px;
 }
 
 label {
-    color: #1BADD6;
+    color: white;
     font-size: 38px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'arcade', sans-serif;
 }
 
 h1 {
     text-align: center; 
     color: #1BADD6;
     font-size: 25px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'arcade', sans-serif;
     text-shadow: 3px 3px 3px black;
 
 }
@@ -37,7 +47,7 @@ h1 {
 p {
     color: #1BADD6;
     font-size: 25px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'arcade', sans-serif;
     line-height: 1.2;
 
 }
@@ -95,8 +105,8 @@ nav {
     margin: 0;
     position: sticky;
     top: 0;
-    background-color: #1A2833;
-    border-bottom: 1px solid #1BADD6;
+    background-color: black;
+    border-bottom: 1px solid yellow;
     z-index: 1;
 }
 
@@ -122,13 +132,13 @@ ul.topnav li a {
     text-align: center;
     padding: 14px;
     text-transform: uppercase;
-    font-family: 'Orbitron', sans-serif;
-    color:#1BADD6;
+    font-family: 'arcade', sans-serif;
+    color:white;
     font-size: 25px;
 }
 
 ul.topnav li a:hover {
-    color: rgb(255, 255, 255);
+    color: yellow;
 } 
 
 ul.topnav li.dropdownIcon {
@@ -145,7 +155,7 @@ ul.topnav li.dropdownIcon {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom: #1BADD6 solid 2px;
+    border-bottom: yellow solid 2px;
 }
 
 #homebackground {
@@ -158,14 +168,26 @@ ul.topnav li.dropdownIcon {
     to { transform: scale(1)}
 }
 
-
-
 #homebackground img {
     animation: pulse;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-
 }
+
+#homebackground img:hover,
+#homebackground img:focus {
+    animation-name: unset;
+    cursor: pointer;
+}
+
+.greeting {
+    background-position-y: top;
+    color: white;
+    font-size: 90px;
+    animation: slide;
+}
+
+
 
 .icon {
     width: 100%;
@@ -176,13 +198,21 @@ ul.topnav li.dropdownIcon {
 .box {
     text-align: center;
     margin: 24px;
+    margin-top: 5px;
+    margin-bottom: 105px;
     padding: 36px 24px 40px 24px;
-    background-color: #1A2833;
+    background-color: rgba(0, 0, 0, 0.653);
     border-radius: 7px;
-    box-shadow: 0 0 0 1px #1BADD6,
-        0 1px 3px 0 #1BADD6;
+    box-shadow: 0 0 0 1px yellow,
+        0 1px 3px 0 yellow;
 }
 
+.desc {
+    color: white;
+    font-family: 'game', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+}
 
 
 
@@ -219,7 +249,7 @@ h1.section2Header {
     margin: 0px;
     font-size: 55px;
     text-align: center;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'arcade', sans-serif;
     line-height: 70px;
     color: #1BADD6;
     background-color: #1A2833;
@@ -231,7 +261,7 @@ h1.section2Header {
     border: 2px solid #1BADD6;
     border-radius: 7px;
     background-color: #1A2833;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'arcade', sans-serif;
     color: #1BADD6;
     font-size: 16px;
     transition-duration: 0.4s;
@@ -253,7 +283,7 @@ h1.section2Header {
 
 .name-field h2 {
     text-align: center;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'arcade', sans-serif;
     color: #1BADD6;
     margin: 0;
     line-height: 70px;
@@ -268,12 +298,12 @@ form {
 
 input[type=text] {
     font-size: 20px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'arcade', sans-serif;
 }
 
 input[type=email] {
     font-size: 20px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'arcade', sans-serif;
 }
 
 textarea {
@@ -287,8 +317,8 @@ textarea {
 .footerTop {
     margin: 0px;
     padding: 0px;
-    color: #1BADD6;
-    border: 1px solid #1BADD6;
+    color: black;
+    border: 1px solid yellow;
 }
 
 #sticky-footer {
@@ -297,18 +327,21 @@ textarea {
     bottom: 0px;
     height: 50px;
     width: 100%;
-    background: #1A2833;
+    background: black;
 }
 
 footer .comName {
-    padding-top: 14px;
+    padding-top: 8px;
     padding-left: 20px;
     float: left;
 }
 
 footer h3 {
+    font-family: 'game', sans-serif;
+    font-size: 25px;
     margin: 0px;
-    color: #1BADD6;
+    color: white;
+    padding: 5px;
 }
 
 
@@ -325,7 +358,7 @@ button.defaultButton {
     border: 1px solid #1BADD6;
     border-radius: 7px;
     background-color: #1A2833;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'arcade', sans-serif;
     color: #1BADD6;
     font-size: 16px;
     transition-duration: 0.4s;
