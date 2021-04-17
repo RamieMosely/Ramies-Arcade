@@ -1,14 +1,10 @@
 # //Ramies Arcade//
 
-User based brain training, tracking and general or specific cognitive improvement 
+5 classic games built with the phaser engine including a high score for each game on the homepage
 
-Games and activities that train:
-
-Musical RHYTHMIC
-VISUAL-SPATIAL
-VERBAL-LINGUISTIC
-LOGICAL-MATHEMATICAL
-BODILY-KINAESTHETIC
-INTERPERSONAL
-NATURALISTIC
+Space Invaders
+Snake
+pacman
+mario bros game
+centipede
 
